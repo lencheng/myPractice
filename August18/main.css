@@ -44,43 +44,6 @@
     object-fit: cover;
 }
 
-.right_box {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100vh;
-    height: 200px;
-    margin-left: auto;
-    display: flex;
-    overflow: scroll;
-}
-
-.cards {
-    position: absolute;
-    min-width: 100%;
-    color: whitesmoke;
-    display: flex;
-}
-
-.card {
-    width: 300px;
-    margin: auto 0 40px 40px;
-    background: rgba(255, 255, 255, 0.1);
-    block-size: 0 25px 45px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(15px);
-    font-size: 20px;
-    padding: 20px;
-}
-
-.card:last-child {
-    margin-right: 40px;
-}
-
-.card p {
-    margin-top: 10px;
-    font-size: 12px;
-}
-
 .container {
     width: 90%;
     margin: 80px auto;
@@ -113,4 +76,81 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+}
+
+.right_box1,
+.right_box2 {
+    position: absolute;
+    right: 0;
+    width: 100vh;
+    display: flex;
+}
+
+.right_box1 {
+    bottom: 240px;
+    width: 100vh;
+    height: 100px;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+
+.right_box2 {
+    bottom: 20px;
+    width: 100vh;
+    height: 200px;
+    overflow: scroll;
+}
+
+.lines {
+    display: flex;
+    width: 100%;
+}
+
+.line {
+    width: 25%;
+    height: 100px;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.line6 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.line_box {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    block-size: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    color: whitesmoke;
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    margin: auto 0 20px 40px;
+    background: rgba(255, 255, 255, 0.25);
+    block-size: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    font-size: 20px;
+    padding: 20px 40px;
+}
+
+.card:last-child {
+    margin-right: 40px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 12px;
 }
