@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 90%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.hamburger,
+.logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right_box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100vh;
+    height: 200px;
+    margin-left: auto;
+    display: flex;
+    overflow: scroll;
+}
+
+.cards {
+    position: absolute;
+    min-width: 100%;
+    color: whitesmoke;
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    margin: auto 0 40px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    block-size: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    font-size: 20px;
+    padding: 20px;
+}
+
+.card:last-child {
+    margin-right: 40px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.container {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.container h2 {
+    font-size: 120px;
+}
+
+.container p {
+    margin: 40px 0;
+    font-size: 24px;
+    color: rgb(187, 187, 187);
+    width: 30%;
+}
+
+.container p a {
+    font-size: 24px;
+    color: rgb(49, 49, 49);
+}
+
+.order_btn {
+    display: block;
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
